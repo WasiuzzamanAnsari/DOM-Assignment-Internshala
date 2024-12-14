@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Online Student Registration System</h2>
+
+        <form id="studentForm" action="#">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" placeholder="Enter Name" required>
+
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" placeholder="Enter Student ID" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <label for="contact">Contact No.:</label>
+            <input type="text" id="contact" placeholder="Enter Contact No." required>
+
+            <button type="submit">Add Student</button>
+        </form>
+
+        <h3>Registered Students</h3>
+        <div id="studentRecords">
+           <!-- Students who are registered successfully will land here. -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
