@@ -53,36 +53,145 @@ body {
     color:black;
     border:1px solid black;
   }
-  
-  #studentRecords {
+
+
+  #studentTable {
+    width: 100%;
+    border-collapse: collapse;
     margin-top: 20px;
-    max-height: 300px;
-    overflow-y: auto;
-  }
-  
-  .record {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f9f9f9;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+#studentTable th {
+    background-color: #f4f4f4;
     padding: 10px;
-    margin: 5px 0;
-    border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  }
-  
-  .record span {
-    flex: 1;
-  }
-  
-  .record button {
-    background-color: #dc3545;
+    border: 1px solid #ddd;
+}
+
+#studentTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#studentTable button {
+    background-color: #007bff;
+    color: white;
     border: none;
     padding: 5px 10px;
-    color: white;
+    margin: 0 2px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 12px;
+}
+
+#studentTable button:hover {
+    background-color: #0056b3;
+}
+
+#studentTable button:nth-child(2) {
+    background-color: #dc3545;
+}
+
+#studentTable button:nth-child(2):hover {
+    background-color: #a71d2a;
+}
+
+
+
+
+
+
+/* Media query for small devices*/
+@media (max-width: 600px) {
+  .container {
+      width: 95%;
+      margin: 20px auto;
+      padding: 15px;
   }
-  
-  .record button:hover {
-    background-color: #c82333;
+
+  h2, h3 {
+      font-size: 18px;
   }
+
+  input, button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  #studentTable {
+      font-size: 12px;
+  }
+
+  #studentTable th, #studentTable td {
+      padding: 8px;
+  }
+
+  #studentTable button {
+      font-size: 10px;
+      padding: 4px 8px;
+  }
+}
+
+/* Media query for medium devices */
+@media (max-width: 900px) and (min-width: 600px) {
+  .container {
+      width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+  }
+
+  h2, h3 {
+      font-size: 20px;
+  }
+
+  input, button {
+      font-size: 15px;
+      padding: 9px;
+  }
+
+  #studentTable {
+      font-size: 13px;
+  }
+
+  #studentTable th, #studentTable td {
+      padding: 9px;
+  }
+
+  #studentTable button {
+      font-size: 11px;
+      padding: 6px 10px;
+  }
+}
+
+/* Media query for large devices*/
+@media (min-width: 900px) {
+  .container {
+      max-width: 900px;
+      margin: 50px auto;
+  }
+
+  h2, h3 {
+      font-size: 24px;
+  }
+
+  input, button {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  #studentTable {
+      font-size: 14px;
+  }
+
+  #studentTable th, #studentTable td {
+      padding: 10px;
+  }
+
+  #studentTable button {
+      font-size: 12px;
+      padding: 5px 10px;
+  }
+}

@@ -9,8 +9,7 @@
 <body>
     <div class="container">
         <h2>Online Student Registration System</h2>
-        
-        <!-- Records will enter here -->
+
         <form id="studentForm" action="#">
             <label for="name">Student Name:</label>
             <input type="text" id="name" placeholder="Enter Name" required>
@@ -28,19 +27,9 @@
         </form>
 
         <h3>Registered Students</h3>
-        <table id="studentTable">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Student ID</th>
-                    <th>Email</th>
-                    <th>Contact</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Records will be displayed here,  once uploaded. -->
-            </tbody>
-        </table>
+        <div id="studentRecords">
+           <!-- Students who are registered successfully will land here. -->
+        </div>
     </div>
 
     <script src="main.js"></script>
