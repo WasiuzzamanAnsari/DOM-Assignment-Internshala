@@ -6,7 +6,7 @@ body {
   }
   
   .container {
-    width: 80%;
+    width: 90%;
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
@@ -54,15 +54,22 @@ body {
     border:1px solid black;
   }
 
+  
+  .table-container {
+    max-height: 120px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
 
   #studentTable {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
     text-align: left;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    border: 1px solid #ddd;
 }
 
 #studentTable th {
@@ -74,6 +81,15 @@ body {
 #studentTable td {
     padding: 10px;
     border: 1px solid #ddd;
+}
+
+#studentTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+  
+
+#studentTable tr:hover {
+    background-color: #f1f1f1;
 }
 
 #studentTable button {
@@ -100,98 +116,34 @@ body {
 }
 
 
-
-
-
-
-/* Media query for small devices*/
-@media (max-width: 600px) {
-  .container {
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
       width: 95%;
-      margin: 20px auto;
-      padding: 15px;
-  }
-
-  h2, h3 {
+    }
+  
+    h2, h3 {
       font-size: 18px;
-  }
-
-  input, button {
+    }
+  
+    input, button {
       font-size: 14px;
-      padding: 8px;
-  }
-
-  #studentTable {
+    }
+  
+    #studentTable th, #studentTable td {
       font-size: 12px;
-  }
-
-  #studentTable th, #studentTable td {
       padding: 8px;
+    }
   }
-
-  #studentTable button {
+  
+  @media (max-width: 480px) {
+    input, button {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    #studentTable th, #studentTable td {
       font-size: 10px;
-      padding: 4px 8px;
+      padding: 6px;
+    }
   }
-}
-
-/* Media query for medium devices */
-@media (max-width: 900px) and (min-width: 600px) {
-  .container {
-      width: 90%;
-      margin: 30px auto;
-      padding: 20px;
-  }
-
-  h2, h3 {
-      font-size: 20px;
-  }
-
-  input, button {
-      font-size: 15px;
-      padding: 9px;
-  }
-
-  #studentTable {
-      font-size: 13px;
-  }
-
-  #studentTable th, #studentTable td {
-      padding: 9px;
-  }
-
-  #studentTable button {
-      font-size: 11px;
-      padding: 6px 10px;
-  }
-}
-
-/* Media query for large devices*/
-@media (min-width: 900px) {
-  .container {
-      max-width: 900px;
-      margin: 50px auto;
-  }
-
-  h2, h3 {
-      font-size: 24px;
-  }
-
-  input, button {
-      font-size: 16px;
-      padding: 10px;
-  }
-
-  #studentTable {
-      font-size: 14px;
-  }
-
-  #studentTable th, #studentTable td {
-      padding: 10px;
-  }
-
-  #studentTable button {
-      font-size: 12px;
-      padding: 5px 10px;
-  }
-}
